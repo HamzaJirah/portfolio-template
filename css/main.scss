@@ -1,0 +1,71 @@
+$colors: (
+  grey: #525072,
+  white: #FFF
+);
+
+@function color($color-map, $color-name){
+  @return map-get($color-map, $color-name)
+};
+
+body {
+  margin: 0;
+  padding-left: 50px;
+
+  .container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .container > * {
+    background: yellow;
+    padding-left: 5px;
+  }
+}
+
+header {
+  padding-top: 5px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-column: 1 / -1;
+
+  .brand {
+    display: grid;
+    grid-template-columns: 30px 30px 30px 30px 30px;
+    grid-gap: 5px;
+  }
+
+  .logo {
+    height: 30px;
+    border-radius: 50%;
+    background: color($colors, grey);
+
+    .brand:nth-child(1) {
+      grid-column: 1 / span 2;
+    }
+  }
+
+  .menu {
+    display: grid;
+    grid-column: 2 / -1;
+    grid-template-columns: 80px 80px 80px 80px;
+    justify-content: right;
+    align-content: right;
+  }
+
+  .menu li {
+    list-style: none;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: color($colors, white);
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}

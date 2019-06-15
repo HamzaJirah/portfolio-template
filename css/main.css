@@ -73,6 +73,7 @@ header .menu li a {
 main {
   display: -ms-grid;
   display: grid;
+  grid-gap: 20px;
   -ms-grid-columns: 1fr auto;
       grid-template-columns: 1fr auto;
 }

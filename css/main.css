@@ -59,10 +59,24 @@ body {
 /* main content*/
 .left-content {
   grid-column: span 4;
+  color: #525072;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
 }
+
+.left-content .cta {
+  display: grid;
+  /* grid-gap: 20px; */
+  grid-template-columns: 80px 120px;
+}
+
+.left-content .cta a {
+  text-decoration: none;
+}
+
+
+
 
 .right-content {
   grid-column: 5 / -1;

@@ -16,3 +16,11 @@ body {
 .container > * {
   background: #b68f08;
 }
+
+.brand {
+  grid-column: span 3;
+}
+
+.menu {
+  grid-column: 4 / -1;
+}

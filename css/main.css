@@ -20,6 +20,15 @@ body {
 
 .brand {
   grid-column: span 3;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 30px);
+}
+
+.brand > * {
+  height: 30px;
+  background: #525072;
+  border-radius: 50%;
 }
 
 .menu {

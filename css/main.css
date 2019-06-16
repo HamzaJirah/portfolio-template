@@ -20,11 +20,29 @@ body {
 
 .brand {
   grid-column: span 3;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 30px);
+}
+
+.brand > * {
+  height: 30px;
+  background: #525072;
+  border-radius: 50%;
 }
 
 .menu {
   grid-column: 4 / -1;
+  /* padding: 10px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 80px);
+  justify-content: right; */
 }
+
+/* .menu > * {
+  background: #525072;
+} */
 
 .left-content {
   grid-column: span 4;

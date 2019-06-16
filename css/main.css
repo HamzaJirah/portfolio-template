@@ -9,9 +9,10 @@ body {
 .container {
   padding: 50px;
   display: grid;
+  grid-gap: 20px;
   grid-template-columns: repeat(10, 1fr)
 }
 
 .container > * {
-  background: #ffc600;
+  background: #b68f08;
 }

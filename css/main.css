@@ -42,10 +42,24 @@ body {
 
 .menu > * {
   background: #525072;
+  justify-self: center;
+  padding: 0 15px;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .left-content {
   grid-column: span 4;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .right-content {
